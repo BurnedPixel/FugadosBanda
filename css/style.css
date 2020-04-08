@@ -1,0 +1,48 @@
+html, body {
+  z-index: 20;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.pageNav {
+  transition: 0.4s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  top: 20px;
+}
+
+.navBarMedia {
+  height: 40px;
+  fill: pink;
+}
+
+.navBarIcons {
+  width: 30px;
+  padding-left: 5px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(1deg) brightness(92%) contrast(93%);
+}
+
+.paralax {
+  z-index: 0 !important;
+  background-image: url("../assets/paralax.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#paralaxLogoRow {
+  height: 100%;
+}
+
+#paralaxLogo {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#paralaxLogo:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/*# sourceMappingURL=style.css.map */
