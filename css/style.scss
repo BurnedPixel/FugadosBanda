@@ -9,24 +9,44 @@ html, body {
   transition: 0.4s;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   top: 20px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.nav-link{
+  transition: all 0.4s;
+}
+
+.nav-link:hover {
+  background: -webkit-linear-gradient(#fd3071, #3c0b7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(1.05)
+}
+
+@media (max-width: 576px) {
+  .nav-link:hover {
+    -webkit-transform: scale(1)
+  }
 }
 
 .navBarMedia {
   height: 40px;
-  fill: pink;
+  padding-right: 70px;
 }
+
 
 .navBarIcons {
   width: 30px;
   padding-left: 5px;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(1deg) brightness(92%) contrast(93%);
+  padding-right: 0px;
 }
 
 
 .paralax {
   z-index:0 !important;
-  background-image: url('../assets/paralax.png');
+  background-image: url('../assets/paralax.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,3 +66,6 @@ html, body {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+//font-family: 'Roboto', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Lato', sans-serif;
